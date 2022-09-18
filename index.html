@@ -366,6 +366,20 @@
             </svg>
           </div>
         </div>
+        <div class="form-newsletter">
+          <p class="paragraf-newsletter">zapisz się do newslettera</p>
+        <form name="newslettter-form" autocomplete="on" novalidate>
+          <label class="label-newsletter">
+            <input type="email" class="input-newslwtter" name="mail" placeholder="E-mail">
+          </label>
+          <button type="submit" class="sumbit-button">
+            <svg class="icon-send" width="250" height="18">
+              <text class="link-newsletter" x="50" y="16">Zapisz się</text>
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -374,7 +388,49 @@
           <svg class="close-button" data-modal-close>
             <use href="./images/icons.svg#close-button"></use>
         </svg>
-       
+
+        <div class="form-modal">
+          <p class="paragraf-form-title">Zostaw swoje dane w formularzu poniżej</p>
+
+           <form name="order-form" autocomplete="on" novalidate>
+            <p class="paragraf-form">Imię</p>
+          <label class="label-form">
+            
+            <svg class="icons-form">
+              <use href="./images/icons.svg#icon-personblack"></use>
+          </svg>
+            <input type="name" class="input-form" name="name" placeholder="Imię">
+          </label>
+          <p class="paragraf-form">Telefon</p>
+                <label class="label-form"l>
+                  <svg class="icons-form">
+                    <use href="./images/icons.svg#icon-phoneblack"></use>
+                </svg>
+            <input type="phone" class="input-form" name="phone" placeholder="Telefon">
+          </label>
+          <p class="paragraf-form">Email</p>
+          <label class="label-form">
+           
+            <svg class="icons-form">
+              <use href="./images/icons.svg#icon-mailblack"></use>
+          </svg>
+            <input type="email" class="input-form" name="mail" placeholder="E-mail">
+          </label>
+          <p class="paragraf-form">Komentarz</p>
+          <label class="label-form">
+            <textarea name="feedback" class="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
+          </label>
+      
+          <input type="checkbox" name="privacy" value="privacy" id="privacy" />
+          <label class="privacy" for="privacy">Oświadczam iż akceptuję     <a class="privacy" href="regulations"
+            ><span style="color: #2196f3">Regulamin</span
+            ></a> i <a href="privacy"><span style="color: #2196f3">Politykę Prywatności</span></a
+          ></label>
+            <button type="submit" class="sumbit-button-modal"> 
+            Wyślij
+          </button>
+          </form>
+        </div>
       </div>
     </div>
 
