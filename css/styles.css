@@ -498,13 +498,11 @@
 }
 
 .figure-portfolio {
-  margin: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
   border-radius: 1%;
   border: 1px solid #eeeeee;
-  overflow: hidden;
   /* background-color: #923e3e; */
-  /* z-index: 2; */
 }
 .figure-portfolio:hover {
   margin: 0 auto;
@@ -513,7 +511,6 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  transition: 250ms;
 }
 
 .icon-socials-white {
@@ -683,22 +680,45 @@
   text-transform: uppercase;
 }
 .box-onlay {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* background-color: #cf9a9a; */
-
+  position: relative;
   overflow: hidden;
 }
-
-.onlay {
-  display: flex;
+.figure-portfolio:hover .hidden-onlay,
+.figure-portfolio:focus .hidden-onlay {
+  transform: translateY(-100%);
+}
+.hidden-onlay {
+  background-color: #2196f3;
   position: absolute;
-  width: 370px;
-  height: 294px;
-  color: transparent;
+  padding-top: 20px;
+  padding-left: 35px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+  transition: transform 250ms ease;
+}
+.hidden-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  position: absolute;
+  width: 301px;
+  text-align: justify;
+}
+/* При ховере меняем значения анимируемых свойств */
+/* .onlay:hover {
+  animation-name: onlay-box;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  background-color: rgba(33, 150, 243, 0.9);
+  animation-direction: alternate;
+  color: #ffffff;
+
+  animation-fill-mode: both;
+} */
+/* .onlay::after:hover {
   text-align: justify;
   padding: 35px;
   font-family: "Roboto";
@@ -706,24 +726,11 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
+
   letter-spacing: 0.03em;
-  z-index: 1;
-  /*  Задаём значения перехода  */
-}
+}  */
 
-/* При ховере меняем значения анимируемых свойств */
-.onlay:hover {
-  animation-name: changeBgColor;
-  animation-duration: 500ms;
-  animation-timing-function: linear;
-  background-color: rgba(33, 150, 243, 0.9);
-  animation-direction: alternate;
-  color: #ffffff;
-  z-index: 1;
-}
-
-@keyframes changeBgColor {
+/* @keyframes onlay-box {
   0% {
     transform: translateY(370px);
   }
@@ -733,7 +740,7 @@
   100% {
     transform: translateY(0px);
   }
-}
+} */
 
 .backdrop {
   position: fixed;
