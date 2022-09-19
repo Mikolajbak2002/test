@@ -948,15 +948,53 @@
   /* background-color: #2196f3; */
   height: 18px;
   width: 34px;
-
+  padding-left: 15px;
   /* padding-left: 12px; */
 }
-
-/* .icon-form:hover {
-  fill: #2196f3;
+.check {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+  padding-bottom: 30px;
+  padding-left: 35px;
+  padding-top: 15px;
+  color: #757575;
+}
+.check::before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 15px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgb(23, 23, 23);
+  border-radius: 2px;
+  transition: transform 0, 5s;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+.checkbox:checked + .check::before {
+  border: none;
+  background-image: url("../images/icon-check.svg");
   background-color: #2196f3;
-  border-color: #2196f3;
-} */
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .sumbit-button-modal {
   position: relative;
   top: 30px;
