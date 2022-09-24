@@ -38,7 +38,7 @@
           <a class="link-nav" href="#kontakt">Kontakt</a>
         </nav>
         <div class="contact">
-          <a class="link-contact" href="mailto:info@devstudio.com"></a>
+          <a class="link-contact" href="mailto:info@devstudio.com">
             <svg class="icon-contact" width="200" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
               <text class="link-contact" x="40" y="11">info@devstudio.com</text>
@@ -123,12 +123,10 @@
     <section class="section-whatwedo">
       <div class="container">
         <ul class="wrapper">
-          <h2 class="paragraf-section">Czym się zajmujemy</h2>
-
+          <li><h2 class="paragraf-section">Czym się zajmujemy</h2></li>
           <li class="box">
             <p class="label">aplikacje komputerowe</p>
             <figure class="figure">
-              
               <!-- Dowolna treść graficzna: zdjęcie, wykres, diagram itp. -->
               <img
                 src="images/block_diagram.jpg"
@@ -137,9 +135,6 @@
                 height="294"
               />
             </figure>
-           
-              
-                          
           </li>
           <li class="box">
             <p class="label">aplikacje mobilne</p>
@@ -172,7 +167,7 @@
     <section class="section-team">
       <div class="container">
         <ul class="wrapper">
-          <h2 class="paragraf-section">Nasz zespół</h2>
+          <li><h2 class="paragraf-section">Nasz zespół</h2></li>
           <li class="box">
             <figure class="figure-team">
               <!-- Dowolna treść graficzna: zdjęcie, wykres, diagram itp. -->
@@ -369,76 +364,107 @@
         <div class="form-newsletter">
           <p class="paragraf-newsletter">zapisz się do newslettera</p>
           <form name="order-form" autocomplete="on" novalidate>
-        <div class="newsletter-box">
-                 <label class="label-newsletter">
-            <input type="email" class="input-newslwtter" name="mail" placeholder="E-mail">
-          </label>
-          <button type="submit" class="sumbit-button" >
-            <text class="link-newsletter" x="0" y="0">Zapisz się</text>
-            <svg class="icon-send">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+            <div class="newsletter-box">
+              <label class="label-newsletter">
+                <input
+                  type="email"
+                  class="input-newslwtter"
+                  name="mail"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="sumbit-button">
+                <text class="link-newsletter" x="0" y="0">Zapisz się</text>
+                <svg class="icon-send">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
-        
-        </form>
-          
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        
-          <svg class="close-button" data-modal-close>
-            <use href="./images/icons.svg#close-button"></use>
+        <svg class="close-button" data-modal-close>
+          <use href="./images/icons.svg#close-button"></use>
         </svg>
 
         <div class="form-modal">
-          <p class="paragraf-form-title">Zostaw swoje dane w formularzu poniżej</p>
+          <p class="paragraf-form-title">
+            Zostaw swoje dane w formularzu poniżej
+          </p>
 
-           <form name="order-form" autocomplete="on" novalidate>
+          <form name="order-form" autocomplete="on" novalidate>
             <p class="paragraf-form">Imię</p>
-          <label class="label-form">
-            
-            <svg class="icons-form">
-              <use href="./images/icons.svg#icon-personblack"></use>
-          </svg>
-            <input type="name" class="input-form" name="name" placeholder="Imię">
-          </label>
-          <p class="paragraf-form">Telefon</p>
-                <label class="label-form"l>
-                  <svg class="icons-form">
-                    <use href="./images/icons.svg#icon-phoneblack"></use>
-                </svg>
-            <input type="phone" class="input-form" name="phone" placeholder="Telefon">
-          </label>
-          <p class="paragraf-form">Email</p>
-          <label class="label-form">
-           
-            <svg class="icons-form">
-              <use href="./images/icons.svg#icon-mailblack"></use>
-          </svg>
-            <input type="email" class="input-form" name="mail" placeholder="E-mail">
-          </label>
-          <p class="paragraf-form">Komentarz</p>
-          <label class="label-form">
-            <textarea name="feedback" class="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
-          </label>
-      <div class="sumbit-box">
-          <input class="checkbox visually-hidden" type="checkbox" name="termsprivacy" value="privacy" id="privacy"/>
-          <label class="check" for="privacy">Oświadczam iż akceptuję     <a href="regulations"
-            ><span style="color: #2196f3">Regulamin</span
-            ></a> i <a href="privacy"><span style="color: #2196f3">Politykę Prywatności</span></a
-          ></label>
-            <button type="submit" class="sumbit-button-modal"> 
-            Wyślij
-          </button>
-      </div>
+            <label class="label-form">
+              <svg class="icons-form">
+                <use href="./images/icons.svg#icon-personblack"></use>
+              </svg>
+              <input
+                type="text"
+                class="input-form"
+                name="name"
+                placeholder="Imię"
+              />
+            </label>
+            <p class="paragraf-form">Telefon</p>
+            <label class="label-form">
+              <svg class="icons-form">
+                <use href="./images/icons.svg#icon-phoneblack"></use>
+              </svg>
+              <input
+                type="tel"
+                class="input-form"
+                name="phone"
+                placeholder="Telefon"
+              />
+            </label>
+            <p class="paragraf-form">Email</p>
+            <label class="label-form">
+              <svg class="icons-form">
+                <use href="./images/icons.svg#icon-mailblack"></use>
+              </svg>
+              <input
+                type="email"
+                class="input-form"
+                name="mail"
+                placeholder="E-mail"
+              />
+            </label>
+            <p class="paragraf-form">Komentarz</p>
+            <label class="label-form">
+              <textarea
+                name="feedback"
+                class="comment"
+                rows="5"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+            <div class="sumbit-box">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="termsprivacy"
+                value="privacy"
+                id="privacy"
+              />
+              <label class="check" for="privacy"
+                >Oświadczam iż akceptuję
+                <a href="regulations"
+                  ><span style="color: #2196f3">Regulamin</span></a
+                >
+                i
+                <a href="privacy"
+                  ><span style="color: #2196f3">Politykę Prywatności</span></a
+                ></label
+              >
+              <button type="submit" class="sumbit-button-modal">Wyślij</button>
+            </div>
           </form>
         </div>
-      
+      </div>
     </div>
-
     <script src="./js/modal.js"></script>
-
   </body>
 </html>

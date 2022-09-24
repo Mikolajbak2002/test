@@ -102,7 +102,7 @@
   line-height: 171%;
   letter-spacing: 0.02em;
   padding-right: 0px;
-  margin-left: 20pxpx;
+  margin-left: 20px;
   margin-right: 20px;
   position: relative;
   /* background-color: #b421f3; */
@@ -810,10 +810,10 @@
   justify-content: space-between;
 }
 .sumbit-button {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
   transition-duration: 0, 4s;
   font-style: normal;
   font-weight: 500;
@@ -856,14 +856,13 @@
 }
 .icon-send {
   fill: #ffffff;
- 
+
   width: 24px;
   height: 24px;
   padding: 0;
   margin: 0;
   margin-left: 24px;
   /* margin-right: 28px; */
-  
 }
 .link-newsletter {
   font-family: "Roboto";
@@ -874,13 +873,11 @@
   /* or 171% */
   letter-spacing: 0.03em;
   margin: 0px;
-text-transform;
- 
+
   color: #ffffff;
   text-align: start;
 }
 .input-newslwtter {
-  
   background-color: transparent;
   height: 50px;
   min-width: 358px;
@@ -897,9 +894,8 @@ text-transform;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.newsletter-box{
+.newsletter-box {
   display: flex;
-  align-items: space-between;
 }
 .paragraf-form {
   font-family: "Roboto";
@@ -1023,7 +1019,7 @@ text-transform;
   position: absolute;
   content: "";
   left: 10px;
-  top: 15px;
+  top: 18px;
   width: 16px;
   height: 15px;
   border: 2px solid rgb(23, 23, 23);
