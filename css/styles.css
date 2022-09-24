@@ -887,7 +887,7 @@ text-transform;
   border-radius: 6px;
   margin: 0;
   border-color: #757575;
-  padding: 0;
+  padding-left: 16px;
   border-style: solid;
   color: #ffffff;
 }
