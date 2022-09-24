@@ -368,18 +368,27 @@
         </div>
         <div class="form-newsletter">
           <p class="paragraf-newsletter">zapisz się do newslettera</p>
-        <form name="newslettter-form" autocomplete="on" novalidate>
-          <label class="label-newsletter">
+          <form name="order-form" autocomplete="on" novalidate>
+        <div class="newsletter-box">
+                 <label class="label-newsletter">
             <input type="email" class="input-newslwtter" name="mail" placeholder="E-mail">
           </label>
-          <button type="submit" class="sumbit-button">
-            <svg class="icon-send" width="250" height="18">
-              <text class="link-newsletter" x="50" y="16">Zapisz się</text>
+          <button type="submit" class="sumbit-button" >
+            <text class="link-newsletter" x="0" y="0">Zapisz się</text>
+            <svg class="icon-send">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
-        </form>
         </div>
+          <!-- <button type="submit" class="sumbit-button-modal"> 
+            <svg class="icon-send" width="250" height="50">
+              <text class="link-newsletter" x="50" y="16">Zapisz się</text>
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button> -->
+         </div>
+        </form>
+          
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -420,7 +429,7 @@
           <label class="label-form">
             <textarea name="feedback" class="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
           </label>
-      
+      <div class="sumbit-box">
           <input class="checkbox visually-hidden" type="checkbox" name="termsprivacy" value="privacy" id="privacy"/>
           <label class="check" for="privacy">Oświadczam iż akceptuję     <a href="regulations"
             ><span style="color: #2196f3">Regulamin</span
@@ -429,6 +438,7 @@
             <button type="submit" class="sumbit-button-modal"> 
             Wyślij
           </button>
+      </div>
           </form>
         </div>
       </div>
