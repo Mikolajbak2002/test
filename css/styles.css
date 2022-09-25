@@ -121,7 +121,7 @@
   letter-spacing: 0.02em;
   padding-right: 0px;
   margin-right: 15px;
-  background-color: #58d23f;
+  /* background-color: #58d23f; */
 }
 .underline {
   display: inline-block;
