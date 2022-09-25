@@ -10,19 +10,27 @@
 }
 
 .menu {
-  width: 1200px;
+  min-width: 1200px;
+  height: 80px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 200%;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
+
   display: flex;
   justify-content: space-between;
-  padding: 0px;
-  margin: 0px;
+  align-items: center;
 }
+.contact {
+  height: 80px;
+  display: flex;
 
+  align-items: center;
+}
+.nav {
+  padding-left: 93px;
+}
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -120,7 +128,7 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   padding-right: 0px;
-  margin-right: 15px;
+
   /* background-color: #58d23f; */
 }
 .underline {
@@ -196,12 +204,6 @@
   cursor: pointer;
   background-color: transparent;
 }
-.contact {
-  display: flex;
-  justify-content: center;
-  /* background-color: #f39121; */
-  align-items: center;
-}
 
 .buttons-portfolio {
   transition-duration: 0, 4s;
@@ -262,14 +264,10 @@
 .button-studio:hover {
   color: #ffffff;
   background-color: var(--button-color);
-  box-shadow: var(--box);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 19px 0px #000000;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 19px 0px #000000;
   border-radius: var(--border);
 
-  background-color: var(--button-color);
-  box-shadow: var(--box);
-  border-radius: var(--border);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -444,7 +442,6 @@
   gap: 0;
   padding: 0;
   margin: 0;
-  /* background-color: #2196f3; */
 }
 .section {
   color: #ffffff;
@@ -858,14 +855,10 @@
 .sumbit-button:hover {
   color: #ffffff;
   background-color: var(--button-color);
-  box-shadow: var(--box);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 19px 0px #000000;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 19px 0px #000000;
   border-radius: var(--border);
 
-  background-color: var(--button-color);
-  box-shadow: var(--box);
-  border-radius: var(--border);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .sumbit-button {
@@ -1112,14 +1105,10 @@
 .sumbit-button-modal:hover {
   color: #ffffff;
   background-color: var(--button-color);
-  box-shadow: var(--box);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 19px 0px #000000;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 19px 0px #000000;
   border-radius: var(--border);
 
-  background-color: var(--button-color);
-  box-shadow: var(--box);
-  border-radius: var(--border);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .box:hover .overlay {
